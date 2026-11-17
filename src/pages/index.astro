@@ -1,60 +1,165 @@
 ---
 import '../styles/global.css';
-const email = 'revuedesmines2028@gmail.com';
+
 const title = 'Revue des Mines 2028 — Bientôt de retour';
 const description = 'La Revue des Mines revient en 2028 : théâtre, musique, satire et esprit Polytech à la Faculté Polytechnique de Mons.';
+const email = 'revuedesmines2028@gmail.com';
+const image = 'https://fede.fpms.ac.be/_astro/statue-fpms.DeN2vM2y_1tVqS4.webp';
 ---
 <!doctype html>
 <html lang="fr-BE">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content={description} />
-  <meta name="theme-color" content="#1e3a8a" />
-  <meta property="og:title" content={title} />
-  <meta property="og:description" content={description} />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="fr_BE" />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <title>{title}</title>
-</head>
-<body>
-  <a class="skip-link" href="#main">Passer au contenu</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#accueil" class="brand" aria-label="Revue des Mines — Accueil">
-        <span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><path d="M6 9h24M10 9v18q8-7 16 0V9" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="m18 13 2 5 5 .5-4 3.5 1 5-4-2.5-4 2.5 1-5-4-3.5 5-.5Z" fill="currentColor"/></svg></span>
-        <span><strong>REVUE DES MINES</strong><small>FACULTÉ POLYTECHNIQUE DE MONS</small></span>
-      </a>
-      <nav aria-label="Navigation principale"><a href="#la-revue">La Revue</a><a href="#tradition">Notre tradition</a><a class="nav-cta" href="#contact">Nous contacter <span aria-hidden="true">↗</span></a></nav>
-    </div>
-  </header>
-  <main id="main">
-    <section class="container hero" id="accueil">
-      <div class="hero-copy">
-        <span class="pill"><span class="dot"></span> L'ÉDITION 2028 EST EN PRÉPARATION</span>
-        <p class="eyebrow">Le rendez-vous des étudiants de Polytech Mons</p>
-        <h1>La Revue<br /><span>des Mines</span><em>.</em></h1>
-        <h2>Le rideau va bientôt se lever.</h2>
-        <p class="lead">Du théâtre, de la musique, de la satire et surtout beaucoup d'esprit Polytech. Une tradition unique se prépare à faire son grand retour.</p>
-        <div class="actions"><a class="btn btn-light" href="#la-revue">Découvrir la Revue <span aria-hidden="true">→</span></a><a class="btn btn-glass" href="#contact">Nous contacter</a></div>
-        <p class="fineprint">Date exacte, programme et billetterie à venir.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content={description} />
+    <meta name="author" content="Revue des Mines — FPMs" />
+    <meta name="theme-color" content="#1e3a8a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_BE" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:site_name" content="Revue des Mines FPMs" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+    <header class="site-header">
+      <div class="container header-brand-row">
+        <a class="site-brand" href="#accueil" aria-label="Revue des Mines, retour à l'accueil">
+          <img src="/favicon.svg" alt="" width="41" height="46" />
+          <span>Fédération des Étudiants FPMs</span>
+        </a>
       </div>
-      <div class="hero-image" aria-hidden="true"><div class="halo"></div><img src="/stage.svg" alt="" width="720" height="630" /><div class="stamp"><small>PROCHAINE</small><strong>2028</strong><small>ÉDITION</small></div><span class="sparkle">✦</span><span class="art-foot">UN SPECTACLE HORS DU COMMUN</span></div>
-    </section>
-    <div class="ribbon" aria-label="Les ingrédients de la Revue"><div class="container ribbon-inner"><span>THÉÂTRE</span><b>✳</b><span>MUSIQUE</span><b>✳</b><span>HUMOUR</span><b>✳</b><span>TRADITION</span><b>✳</b><span>ESPRIT POLYTECH</span></div></div>
-    <section class="container intro section" id="la-revue"><div><p class="kicker">À PROPOS DE L'ÉVÉNEMENT</p><h2>Bien plus qu'un<br /><span>simple spectacle.</span></h2></div><div class="prose"><p>La <strong>Revue des Mines</strong>, c'est un spectacle satirique imaginé et porté par les étudiants de la Faculté Polytechnique de Mons. Tous les cinq ans, la vie de la Faculté devient le décor d'une aventure pleine d'humour et de surprises.</p><p>Sur scène comme en coulisses, les talents se croisent pour donner vie à une aventure collective : écriture, jeu, musique, décors, costumes, technique et bien plus encore.</p><a class="text-link" href="https://fede.fpms.ac.be/grands-evenements/revue" target="_blank" rel="noopener noreferrer">En savoir plus sur le site de la Fédé ↗</a></div></section>
-    <section class="features section" id="tradition"><div class="container"><div class="section-heading"><div><p class="kicker">L'ESPRIT DE LA REVUE</p><h2>Une scène. <span>Mille talents.</span></h2></div><p>Un rendez-vous qui fait vibrer plusieurs générations de Polytechniciens.</p></div><div class="cards">
-      <article class="feature"><small>01 / L'ART DE LA SATIRE</small><div class="feature-icon" aria-hidden="true">✧</div><h3>Un humour bien de chez nous</h3><p>Professeurs, anecdotes et vie facultaire : le quotidien de la Polytech prend une tournure inattendue.</p></article>
-      <article class="feature"><small>02 / LE GRAND SPECTACLE</small><div class="feature-icon" aria-hidden="true">♫</div><h3>De l'énergie sur scène</h3><p>Théâtre, chansons, musique et mise en scène se réunissent pour créer un moment mémorable.</p></article>
-      <article class="feature"><small>03 / L'AVENTURE COLLECTIVE</small><div class="feature-icon" aria-hidden="true">✳</div><h3>Des étudiants, ensemble</h3><p>Sur scène ou en coulisses, chacun contribue avec son savoir-faire à une tradition qui nous rassemble.</p></article>
-    </div></div></section>
-    <section class="container edition-wrap section"><div class="edition"><div><p class="kicker kicker-light">PROCHAINEMENT</p><h2>2028, <span>on se retrouve.</span></h2><p>La prochaine édition se prépare. Le thème, les dates, le lieu et les informations pratiques seront dévoilés au fil des annonces officielles.</p><div class="edition-status"><span class="dot"></span> LES PRÉPARATIFS SONT LANCÉS</div></div><strong class="huge-year" aria-hidden="true">28</strong></div></section>
-    <section class="container contact-wrap section" id="contact"><div class="contact"><div class="contact-copy"><p class="kicker">RESTONS EN CONTACT</p><h2>Une question, une idée<br />ou envie de <span>nous soutenir ?</span></h2><p>La Revue des Mines, c'est aussi une aventure qui se construit avec ses partenaires. Pour une prise de contact ou une proposition de soutien, écrivez à l'équipe de l'édition 2028.</p><div class="contact-actions"><a class="btn btn-blue" href={`mailto:${email}?subject=Contact%20-%20Revue%20des%20Mines%202028`}>Contacter l'équipe <span aria-hidden="true">↗</span></a><a class="contact-email" href={`mailto:${email}`}>{email}</a></div></div><span class="contact-art" aria-hidden="true">✳</span></div></section>
-  </main>
-  <footer><div class="container footer-grid"><div><strong>REVUE DES MINES <span>·</span> POLYTECH MONS</strong><p>Une tradition étudiante qui traverse les générations.</p></div><div class="footer-links"><a href="https://fede.fpms.ac.be/" target="_blank" rel="noopener noreferrer">La Fédé ↗</a><a href="https://historique.fede.fpms.ac.be/revue.php" target="_blank" rel="noopener noreferrer">Les archives ↗</a><a href={`mailto:${email}`}>Contact ↗</a></div><div class="copyright"><span>© {new Date().getFullYear()} Revue des Mines · Faculté Polytechnique de Mons</span><span>Imaginé à Mons, avec l'esprit Polytech.</span></div></div></footer>
-</body>
+      <div class="container header-nav-row">
+        <nav class="site-nav" aria-label="Navigation principale">
+          <a href="#accueil">Accueil</a>
+          <a href="#la-revue">La Revue des Mines</a>
+          <a href="#tradition">Notre tradition</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="fede-link" href="https://fede.fpms.ac.be/" target="_blank" rel="noopener noreferrer">Site Fédé <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="main" class="container page-content">
+      <section class="hero" id="accueil" aria-labelledby="hero-heading">
+        <img class="hero-photo" src={image} alt="Statue Guibal et Devillez devant la Faculté Polytechnique de Mons" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" />
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="hero-label"><span class="status-dot" aria-hidden="true"></span> PROCHAINE ÉDITION · 2028</p>
+          <h1 id="hero-heading">La <span class="text-gradient">Revue des Mines</span> revient bientôt&nbsp;!</h1>
+          <p>Le rideau va bientôt se lever sur une nouvelle édition de cette grande tradition étudiante de la Faculté Polytechnique de Mons.</p>
+          <a class="hero-action" href="#la-revue">Découvrir l'événement <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="intro-card" aria-labelledby="intro-heading">
+        <div>
+          <p class="eyebrow">COMING SOON · 2028</p>
+          <h2 id="intro-heading">Le spectacle se prépare.</h2>
+          <p>Théâtre, musique, humour et esprit Polytech : la <strong>Revue des Mines</strong> sera bientôt de retour. Retrouvez ici les informations sur la prochaine édition au fur et à mesure de leur annonce.</p>
+        </div>
+        <span class="intro-status"><span class="status-dot" aria-hidden="true"></span> Édition en préparation</span>
+      </section>
+
+      <section class="section about-section" id="la-revue" aria-labelledby="about-heading">
+        <div class="section-heading">
+          <p class="eyebrow">DÉCOUVRIR LA REVUE</p>
+          <h2 id="about-heading">Qu'est-ce que la <span class="text-gradient">Revue des Mines</span> ?</h2>
+        </div>
+        <div class="about-grid">
+          <article class="white-card border-card">
+            <h3>Une tradition de la Polytech</h3>
+            <p>La Revue des Mines est un spectacle satirique imaginé et porté par les étudiants de la Faculté Polytechnique de Mons. Tous les cinq ans, la vie de la Faculté prend une tournure inattendue, pleine de références et d'humour.</p>
+            <p>Sur scène comme en coulisses, étudiants et passionnés se retrouvent autour de l'écriture, du jeu, de la musique, des décors, des costumes et de la technique.</p>
+            <a class="text-link" href="https://fede.fpms.ac.be/grands-evenements/revue" target="_blank" rel="noopener noreferrer">En savoir plus sur la Fédé <span aria-hidden="true">↗</span></a>
+          </article>
+          <aside class="white-card side-card">
+            <img src="/stage.svg" alt="Illustration stylisée d'une scène de théâtre avec ses rideaux" width="720" height="630" loading="lazy" decoding="async" />
+            <p>Un événement conçu par les étudiants, pour toute la communauté Polytech.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section tradition-section" id="tradition" aria-labelledby="tradition-heading">
+        <div class="section-heading">
+          <p class="eyebrow">L'ESPRIT DE LA REVUE</p>
+          <h2 id="tradition-heading">Une scène, <span class="text-gradient">mille talents.</span></h2>
+        </div>
+        <div class="feature-grid">
+          <article class="white-card feature-card">
+            <span class="feature-number">01</span>
+            <h3>Humour & satire</h3>
+            <p>Professeurs, anecdotes et vie facultaire : les petites histoires de la Polytech deviennent de grands moments sur scène.</p>
+          </article>
+          <article class="white-card feature-card">
+            <span class="feature-number">02</span>
+            <h3>Musique & spectacle</h3>
+            <p>Chansons, théâtre et mise en scène s'unissent pour offrir une représentation mémorable.</p>
+          </article>
+          <article class="white-card feature-card">
+            <span class="feature-number">03</span>
+            <h3>Une aventure collective</h3>
+            <p>De la régie aux costumes, chacun peut mettre ses talents au service d'une tradition qui rassemble des générations.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section announcement-section" aria-labelledby="announcement-heading">
+        <div class="white-card announcement-card">
+          <span class="announcement-year" aria-hidden="true">2028</span>
+          <div>
+            <p class="eyebrow">PROCHAINE ÉDITION</p>
+            <h2 id="announcement-heading">On se retrouve en <span class="text-gradient">2028</span> !</h2>
+            <p>La prochaine édition est en préparation. La date exacte, le thème, le lieu et la billetterie seront communiqués dès leur confirmation.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+        <div class="white-card border-card contact-card">
+          <div>
+            <p class="eyebrow">RESTONS EN CONTACT</p>
+            <h2 id="contact-heading">Une question, une idée ou envie de <span class="text-gradient">nous soutenir</span> ?</h2>
+            <p>La Revue des Mines se construit avec ses participants et ses partenaires. Pour toute proposition de collaboration ou demande d'information, contactez l'équipe de l'édition 2028.</p>
+          </div>
+          <div class="contact-links">
+            <a class="primary-button" href={'mailto:' + email + '?subject=Contact%20-%20Revue%20des%20Mines%202028'}>Contacter l'équipe <span aria-hidden="true">↗</span></a>
+            <a class="email-link" href={'mailto:' + email}>{email}</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <h2>La Revue des Mines</h2>
+          <p>Une tradition étudiante de la Faculté Polytechnique de Mons.</p>
+        </div>
+        <div>
+          <h2>Liens utiles</h2>
+          <ul>
+            <li><a href="https://fede.fpms.ac.be/" target="_blank" rel="noopener noreferrer">Site de la Fédé</a></li>
+            <li><a href="https://historique.fede.fpms.ac.be/revue.php" target="_blank" rel="noopener noreferrer">Commission Historique FPMs</a></li>
+            <li><a href="#la-revue">À propos de la Revue</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href={'mailto:' + email}>{email}</a></li>
+            <li><a href="#accueil">Retour en haut ↑</a></li>
+          </ul>
+        </div>
+        <div class="footer-mark"><img src="/favicon.svg" alt="Blason de la Faculté Polytechnique de Mons" width="112" height="125" /></div>
+        <p class="footer-bottom">© {new Date().getFullYear()} Revue des Mines · Faculté Polytechnique de Mons</p>
+      </div>
+    </footer>
+  </body>
 </html>
